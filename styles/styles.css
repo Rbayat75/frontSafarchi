@@ -186,12 +186,22 @@
 .menu-bar-hamberger {
   background-color: #fff;
   position: absolute;
-  top: 0;
+  top: 10px;
   left: -1px;
   width: 200px;
   border-radius: 3px;
   display: none;
   z-index: 100;
+}
+.menu-login:hover {
+  background-color: #74aab2;
+  color: #fff;
+  border-radius: 5px;
+}
+.menu-service:hover {
+  background-color: #74aab2;
+  color: #fff;
+  border-radius: 5px;
 }
 /* end navbar */
 
