@@ -17,40 +17,93 @@
             class="col col-xl-4 col-lg-5 d-xl-block d-lg-block d-md-none d-sm-none d-none"
           >
             <div class="d-flex align-items-center h64">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center" id="eng">
                 <p class="m-0 fw-bold fs13 c-grey-1">ENG</p>
-                <i class="fa-solid fa-angle-down px-2 fs14 c-grey-1"></i>
-                <!-- <i class="fa-solid fa-angle-up px-2"></i> -->
+                <i
+                  class="fa-solid fa-angle-down px-2 fs14 c-grey-1"
+                  id="eng-icon"
+                ></i>
                 <div
                   class="circle-navbar bg-green-1 d-flex align-items-center justify-content-center"
                 >
                   <i class="fa-solid fa-peace fs14 c-white"></i>
                 </div>
+                <div class="menu-list-eng" id="dropdown-eng">
+                  <ul class="list-unstyled my-1 overflow-hidden">
+                    <li class="c-green-1 p-1 flag-hover-eng">
+                      <img
+                        src="assets/images/flag3.png"
+                        class="img-fluid me-2 mb-1"
+                      />
+                      ENG
+                    </li>
+                    <li class="c-green-1 p-1 flag-hover-deu">
+                      <img
+                        src="assets/images/flag2.png"
+                        class="img-fluid me-2 mb-1"
+                      />
+                      DEU
+                    </li>
+                    <li class="c-green-1 p-1 flag-hover-tur">
+                      <img
+                        src="assets/images/flag1.png"
+                        class="img-fluid me-2 mb-1"
+                      />
+                      TUR
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="d-flex align-items-center h98">
               <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0">
-                <li class="nav-item pe-lg-4 pe-2">
-                  <div class="nav-link fs14 fw-bold c-grey-1">
-                    Services
-                    <i class="fa-solid fa-angle-down fs14 c-grey-1"></i>
+                <li class="nav-item">
+                  <div class="menu-item">
+                    <div class="nav-link fs14 fw-bold item-text original">
+                      Services
+                      <i class="fa-solid fa-angle-down fs14"></i>
+                    </div>
+                    <div class="nav-link fs14 fw-bold item-text hover">
+                      Services
+                      <i class="fa-solid fa-angle-down fs14"></i>
+                    </div>
                   </div>
                 </li>
-                <li class="nav-item pe-lg-4 pe-2">
-                  <a
-                    class="nav-link fs14 fw-bold c-grey-1"
-                    aria-current="page"
-                    href="#"
-                    >Contacts us</a
-                  >
-                </li>
-                <li class="nav-item pe-lg-4 pe-2">
-                  <a class="nav-link fs14 fw-bold c-grey-1" href="#"
-                    >About us</a
-                  >
+                <li class="nav-item">
+                  <div class="menu-item">
+                    <a
+                      class="nav-link fs14 fw-bold item-text original"
+                      aria-current="page"
+                      href="#"
+                      >Contacts us</a
+                    >
+                    <a
+                      class="nav-link fs14 fw-bold item-text hover"
+                      aria-current="page"
+                      href="#"
+                      >Contacts us</a
+                    >
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs14 fw-bold c-grey-1" href="#">Blog</a>
+                  <div class="menu-item">
+                    <a class="nav-link fs14 fw-bold item-text original" href="#"
+                      >About us</a
+                    >
+                    <a class="nav-link fs14 fw-bold item-text hover" href="#"
+                      >About us</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="menu-item">
+                    <a class="nav-link fs14 fw-bold item-text original" href="#"
+                      >Blog</a
+                    >
+                    <a class="nav-link fs14 fw-bold item-text hover" href="#"
+                      >Blog</a
+                    >
+                  </div>
                 </li>
               </ul>
             </div>
@@ -80,19 +133,55 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-end h98">
+            <div
+              class="d-flex align-items-center justify-content-end h98"
+              id="profile"
+            >
               <i class="fa-solid fa-angle-down pe-4 fs14 c-grey-1"></i>
-              <!-- <i class="fa-solid fa-angle-up px-2"></i> -->
               <div
                 class="circle-navbar bg-green-1 d-flex align-items-center justify-content-center"
               >
                 <i class="fa-regular fa-user fs14 c-white"></i>
               </div>
+              <div class="menu-list-profile" id="dropdown-profile">
+                <ul class="list-unstyled my-1 overflow-hidden">
+                  <li class="text-start ps-2 pointer profile-hover">
+                    <i class="fa-solid fa-user fs11"></i>
+                    profile
+                  </li>
+                  <li class="text-start ps-2 pointer orders-hover">
+                    <i class="fa-solid fa-bag-shopping fs11"></i>
+                    orders
+                  </li>
+                  <li class="text-start ps-2 pointer likes-hover">
+                    <i class="fa-solid fa-heart fs11"></i>
+                    likes
+                  </li>
+                  <li class="text-start ps-2 pointer exit-hover">
+                    <i class="fa-solid fa-right-from-bracket fs11"></i>
+                    exit
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col col-md-6 col-sm-6 d-lg-none">
-            <div class="d-flex align-items-center justify-content-start h-100">
+            <div
+              class="d-flex align-items-center justify-content-start h-100 menu-bar"
+            >
               <i class="fa-solid fa-bars fs25"></i>
+              <div class="menu-bar-hamberger">
+                <ul class="list-unstyled">
+                  <li class="text-start px-3 py-3 pointer">
+                    <i class="fa-regular fa-user me-2"></i>
+                    Login
+                  </li>
+                  <li class="text-start px-3 py-3 pointer">
+                    <i class="fa-solid fa-bars me-2"></i>
+                    Servises
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col col-md-6 col-sm-6 d-lg-none">
@@ -105,6 +194,7 @@
       </div>
     </nav>
     <!-- End navbar -->
+
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
