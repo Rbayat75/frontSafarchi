@@ -205,6 +205,34 @@
 }
 /* end navbar */
 
+/* start banner */
+.img-45 {
+  height: 470px !important;
+}
+.img-49 {
+  height: 198px !important;
+}
+.img-46 {
+  height: 411px !important;
+}
+.img-44 {
+  height: 255px !important;
+}
+.container-image {
+  height: 100px;
+  padding: 10px 0px;
+  scrollbar-width: none;
+}
+.main-image {
+  height: 300px !important;
+  width: 100% !important;
+}
+.img-slider-mobile {
+  width: 60px !important;
+  height: 60px !important;
+}
+/* End banner */
+
 /* start font Size */
 
 .fs10 {
