@@ -1,6 +1,15 @@
 /* bgColor*/
+.bg-white-1 {
+  background-color: #fcf9f2;
+}
 .bg-green-1 {
   background-color: #42656a;
+}
+.bg-green-2 {
+  background-color: #557d83;
+}
+.bg-grey-1 {
+  background-color: #d3cfc4;
 }
 /* bgColor*/
 
@@ -8,11 +17,21 @@
 .c-white {
   color: #fff;
 }
+.c-white-2 {
+  color: #f8feff;
+}
 .c-grey-1 {
   color: #414a53;
 }
+
 .c-green-1 {
   color: #74aab2;
+}
+.c-green-2 {
+  color: #557d83;
+}
+.c-green-3 {
+  color: #42656a;
 }
 /* color */
 
@@ -233,6 +252,45 @@
 }
 /* End banner */
 
+/* start cart*/
+.h100 {
+  height: 100px;
+}
+.title-h {
+  height: 18px;
+  overflow: hidden;
+}
+/* end cart*/
+
+/* Start Description*/
+.rectangle {
+  width: 8px;
+  height: 8px;
+  background-color: #69969d;
+  transform: rotate(45deg);
+}
+.line {
+  height: 100%;
+  width: 2px;
+  background-color: #69969d;
+  margin-left: 0.5px;
+}
+.img-timeline {
+  width: 95%;
+  height: 200px;
+}
+.min-h300 {
+  min-height: 300px;
+}
+.min-h600 {
+  min-height: 500px !important;
+}
+.mt-12 {
+  margin-top: -12px;
+}
+
+/* End Description*/
+
 /* start font Size */
 
 .fs10 {
@@ -258,9 +316,13 @@
 .fs15 {
   font-size: 15px;
 }
+.fs20 {
+  font-size: 20px;
+}
 .fs25 {
   font-size: 25px;
 }
+
 /* end font Size */
 
 /*start media min-width */
@@ -288,6 +350,9 @@
 /* start media max-width */
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .min-h600 {
+    min-height: 650px !important;
+  }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
