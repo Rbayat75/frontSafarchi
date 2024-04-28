@@ -354,6 +354,9 @@
 /* end accordion */
 
 /* start footer */
+.logo-footer {
+  width: 80px;
+}
 .img-footer {
   width: 20px;
   height: 20px;

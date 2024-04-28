@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  const close_accordion = document.getElementById("close-accordion");
-
   $("#eng").click(function () {
     $("#eng-icon").toggleClass("icon-rotate");
     $("#dropdown-eng").toggleClass("show-dropdown");
