@@ -11,6 +11,12 @@
 .bg-grey-1 {
   background-color: #d3cfc4;
 }
+.bg-green-3 {
+  background-color: #dbfaff;
+}
+.bg-green-4 {
+  background-color: #7dafb6;
+}
 /* bgColor*/
 
 /* color */
@@ -250,6 +256,9 @@
   width: 60px !important;
   height: 60px !important;
 }
+.active {
+  opacity: 0.5;
+}
 /* End banner */
 
 /* start cart*/
@@ -288,8 +297,72 @@
 .mt-12 {
   margin-top: -12px;
 }
-
+.custom-alert {
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.custom-alert::before {
+  content: "";
+  height: inherit;
+  width: 5px;
+  background-color: #7dafb6;
+  position: absolute;
+  left: 0;
+}
+.icon-fly {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  color: #f8feff;
+}
+.text-alert {
+  font-size: 15px;
+  font-weight: bold;
+}
 /* End Description*/
+
+/* start accordion */
+.accordion-custom {
+  height: 50px;
+  background-color: #e8e4db;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.main-accordion {
+  background-color: #f8feff;
+  border-radius: 5px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  display: none;
+  transition: 0.2 ease-in-out;
+}
+.main-accordion::after {
+  content: " ";
+  height: 100px;
+  width: 3px;
+  background-color: #7dafb6;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.show {
+  display: block;
+}
+
+/* end accordion */
+
+/* start footer */
+.img-footer {
+  width: 20px;
+  height: 20px;
+}
+.search-footer {
+  border: 1px solid #ccc !important;
+  border-radius: 5px;
+}
+/* end footer */
 
 /* start font Size */
 
@@ -351,7 +424,11 @@
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .min-h600 {
-    min-height: 650px !important;
+    min-height: 680px !important;
+  }
+  .text-alert {
+    font-size: 12px;
+    font-weight: 300;
   }
 }
 
